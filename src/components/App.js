@@ -2,6 +2,7 @@ import React from "react";
 import CreateLink from "./CreateLink";
 import LinkList from "./LinkList";
 import Header from "./Header";
+import Login from "./Login";
 import { Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={LinkList} />
           <Route exact path="/create" component={CreateLink} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </div>
     </div>
